@@ -1,0 +1,137 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass[margin]{res}
+\usepackage [brazil]{babel}     % nomes e hifenaçã em português
+ 
+\usepackage{t1enc}              % Permite digitar os acentos de forma normal
+\usepackage[utf8]{inputenc} 
+
+\topmargin=-0.5in  % start text higher on the page
+\setlength{\textheight}{10in} % increase text height to fit resume on 1 page
+\begin{document}  
+\name{\textit{Paulo Leonardo Benatto}}
+
+\address{Florianopolis,  Brazil \\ benatto@gmail.com \\ +55 (48) 99767365 }
+                           
+                        
+\begin{resume}                        
+ 
+\section{Summary}       Bachelor in computer science having expertise in software development, good professional relationship and focused at work.
+                        With 6 years of professional experience in software development using basically, C/C++, I am now looking for new challenges
+                        and opportunities that allow me to learn new technologies and work with new people.
+ 
+\section{Education}	Universidade Estadual do Oeste do Parana (UNIOESTE),  BS in Computer Science, December 2007.
+  
+\section{Experience}      
+
+\vspace{-0.1in}
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{1.7in}\= \kill % set up two tab positions
+    \textbf{SEC+}    \>\>\textbf{Dec 2012 - Present}\\
+    \textit{System Analyst}\\        
+    \textbf{Main Tecnologies}: Linux, Python, Django Framework, JavaScript and C;
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+    \vspace{5mm}
+    \begin{itemize}
+     \item C ANSI development to analyze ELF binaries. MalELFicus project;
+     \item Development of tests with \textit{CUnit};
+     \item Software documentation with \textit{doxygen} and/or \textit{gtk-doc};
+     \item Backend development with \textit{python/django} (Intermediate);
+     \item Frontend development with \textit{JavaScript}. GoogleMaps API v3. (Intermediate);
+     \item Database \textit{PostgreSQL};
+     \item Agile development with \textit{SCRUM};
+     \item \textit{GNU/Linux} administration;
+    \end{itemize}
+
+
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{1.7in}\= \kill % set up two tab positions
+    \textbf{Digitro Technology - NDS}    \>\>\textbf{Jan 2012 - Dec 2012}\\
+    \textit{System analyst}\\   
+    \textbf{Main Tecnologies}: Linux, C ANSI, shellscript, protocols: HTTP, SIP, UDP, TCP;
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+    \vspace{5mm}
+    \begin{itemize}
+     \item Software development of collection and interception of data used in police and judicial investigations.
+     \item Development of parsers for data gathered from Facebook, WhatsApp, general email, IRC and others.
+     \item \textit{Test Driven Development} (TDD) with \textit{CUnit};
+     \item Automatic build with \textit{JHBuild};
+     \item Continuous integrations with Jenkins;
+     \item Software documentation \textit{doxygen} and/or \textit{gtk-doc};
+     \item Libraries: \textit{GLib}, \textit{PCAP}, \textit{Iconv}, and others;
+     \item Agile development with \textit{SCRUM};
+     \item GNU/Linux administration;
+    \end{itemize}
+ 
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{1.5in}\= \kill % set up two tab positions
+    \textbf{Digitro Technology - STE}    \>\>\textbf{Set 2008 - Dec 2011}\\
+    \textit{System analyst}\\   
+    \textbf{Main Tecnologies}: Linux, VoIP, C/C++, shellscript, protocols: UDP, TCP, SIP;
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+    \vspace{5mm}
+    \begin{itemize}
+      \item \textit{FreeSWITCH} administration;
+      \item \textit{OpenSER} administration;
+      \item Development of SIP protocol on a softphone; 
+      \item Development of interface using the EFL (Enlightenment Foundation Libraries) stack on a IPphone;  
+      \item GNU/Linux adminsitration (Debian and CentOS); 
+      \item Development Tools: \textit{VI, GCC, make, cmake, VisualStudio, Splint, Valgrind, gdb and subversion};
+      \item Document database: \textit{mongodb}; 
+      \item Automate tasks with \textit{shell script} and \textit{python};
+    \end{itemize}
+
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{1.5in}\= \kill % set up two tab positions
+    \textbf{Virtual Office}    \>\>\textbf{Jan 2008 - Aug 2008}\\
+    \textit{Developer Jr}\\
+    \textbf{Main Tecnologies}: Linux, VoIP, SIP, Asterisk and Latex;
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+    \vspace{5mm}
+    \begin{itemize}
+      \item PBX IP Asterisk administration;
+      \item Debian GNU/Linux adminstration (shell script);
+      \item Web development solutions using PHP, HTML, CSS and MySQL; 
+      \item Development of a document, in latex, about Asterisk software; 
+      \item Customer Support VoIP;
+    \end{itemize}
+
+\section{Skills Base}  \textit{Operating System}:  Linux (Debian, Ubuntu, CentOS and others), Windows NT/XP/Vista/7 and OSX;
+
+			\textit{Network Protocols}: IP, TCP, UDP, HTTP, SIP, FTP, SMTP, SNMP, e outros;
+  
+			\textit{Progamming Languages}: C/C++, Python, JavaScript, plus some experience with lua / Java / Ruby / PHP / HTML;
+  
+			\textit{Virtualization}: VirtualBox, VMWare, plus some experience with Xen;
+
+			\textit{Languages}: Fluent in Portuguese, Intermediate in English and Spanish;
+ 
+\section{Projects}
+		In my spare time I develop some open source projects (https://github.com/patito/).
+		
+		\begin{itemize}
+		\vspace{2mm}
+		\item \textbf{libpenetra}: The libpenetra was created with the goal of studying the windows binary format known as Portable Executable (PE). With libpenetra you can access all information about PE binaries. (\texttt{https://github.com/patito/libpenetra})\vspace{1mm}	
+		\item \textbf{libmalelf}: The libmalelf is an evil library that SHOULD be used for good! It was developed with the intent to assist in the process of infecting binaries and provide a safe way to analyze malwares. (\texttt{https://github.com/SecPlus/libmalelf})\vspace{1mm}
+		\item \textbf{malelf}: Malelf is a tool that uses libmalelf to dissect and infect ELF binary. (\texttt{https://github.com/SecPlus/malelf})
+		\end{itemize}
+ 
+\section{More Info}
+    \begin{itemize}
+     \item \textbf{Linkedin}: http://www.linkedin.com/in/benatto
+     \item \textbf{Github}: https://github.com/patito
+    \end{itemize}
+
+
+\end{resume} 
+\end{document}
+
+
+
+
+
+
+
+
+
