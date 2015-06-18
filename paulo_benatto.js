@@ -3,7 +3,10 @@
  * Curriculum Vida Loka
  */
 
-var Curriculum = ( function(window) {
+
+
+var Curriculum = (function () {
+    "use strict";
 
     var name = "Paulo Leonardo Benatto";
 
@@ -13,24 +16,26 @@ var Curriculum = ( function(window) {
 
     var email = "benatto@gmail.com";
 
+    var linkedin = "https://uk.linkedin.com/in/benatto";
+
     var github = "github.com/patito";
 
     var phone = "+44 07424600850";
 
     var summary = "Hi mate,\n\n" +
 
-    "first of all I'm not a hobbit, neither dwarf, but I don't mind if you call me Frodo. \n\n" +
+            "first of all I'm not a hobbit, neither dwarf, but I don't mind if you call me Frodo. \n\n" +
 
-    "My name is Paulo Leonardo Benatto (aka patito) and I'm from south Brazil. Currently I'm" +
-    "living in the craziest city in the Uk, Brighton. What I'm doing here? Open pan popcorn," +
-    "traveling, learning English, meeting people, drinking pints and making bugs in the old continent.\n\n" +
+            "My name is Paulo Leonardo Benatto (aka patito) and I'm from south Brazil. Currently I'm" +
+            "living in the craziest city in the Uk, Brighton. What I'm doing here? Open pan popcorn," +
+            "traveling, learning English, meeting people, drinking pints and making bugs in the old continent.\n\n" +
 
-    "I started my life in England working as busser (waiter assistant) in London, good times, but now" +
-    "I'm back to the dark side, making memory leaks.\n\n" +
+            "I started my life in England working as busser (waiter assistant) in London, good times, but now" +
+            "I'm back to the dark side, making memory leaks.\n\n" +
 
-    "Currently I'm working at Brandwatch on IT team. Both are amazing, the company and my team." +
-    "I'm Jr. Sysadmin and the most of my time I'm automating tasks using Python, uWSGI, Nginx" +
-    "(with SSL) on Debian servers. But sometimes I work with Nagios and other admin tasks.\n\n";
+            "Currently I'm working at Brandwatch on IT team. Both are amazing, the company and my team." +
+            "I'm Jr. Sysadmin and the most of my time I'm automating tasks using Python, uWSGI, Nginx" +
+            "(with SSL) on Debian servers. But sometimes I work with Nagios and other admin tasks.\n\n";
 
     var experience = [];
 
@@ -59,7 +64,7 @@ var Curriculum = ( function(window) {
     };
 
     var secplus = {
-        started: new Date("December 17, 2012"), 
+        started: new Date("December 17, 2012"),
         finished: new Date("November 29, 2013"),
         tasks: [
             "Backend development of web system for intelligent monitoring and management of natural disasters using Python.",
@@ -121,20 +126,21 @@ var Curriculum = ( function(window) {
         "Making new friends"
     ];
 
-    function Curriculum() {
-        this.getExperience = function () { 
-            console.log(experience);
+    function MyCurriculum() {
+
+        this.getExperience = function () {
+            return experience;
         };
 
-        this.getInterests = function () { 
-            console.log(interests);
+        this.getInterests = function () {
+            return interests;
         };
     }
 
-    return Curriculum;
+    return MyCurriculum;
 
-}) (window);
+}());
 
 var cv = new Curriculum();
-cv.getInterests();
-cv.getExperience();
+console.log(cv.getInterests());
+console.log(cv.getExperience());
