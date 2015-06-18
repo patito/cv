@@ -1,0 +1,29 @@
+body {
+  background: black;
+}
+
+* {
+    font-family: Menlo;
+    font-style: Regular;
+    font-size: 11px;
+}
+
+span.blue-words {
+  color: rgb(0,200,250);
+}
+
+span.pink-words {
+  color: rgb(255,50,150);
+}
+
+span.white-words {
+  color: rgb(255,255,255);
+}
+
+span.yellow-words {
+  color: rgb(204,204,0);
+}
+
+span.one-tab {
+    padding-left: 2.5em;
+}
