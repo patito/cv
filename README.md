@@ -10,6 +10,13 @@ Universidade Estadual do Oeste do Parana (UNIOESTE), BS in Computer Science, Dec
 
 ## Experience
 
+
+### Spotify - Senior Software Engineer (EH TESTE, VIADO)
+
+Hey, it your profile looks amazing, and I believe you blablabla
+this role you would be rdeveloping in java bla bla bla bla
+reach me on marcelog@spotify.com
+
 ### DBA Technology
 
 I attended of the project to develop a system of vehicle count on Brazilian highways, basically my task was read files with a lot of records and parse all information, store in memory and report this information in a human readable. This project was developed using language C ANSI and Linux platform. 
